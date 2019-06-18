@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		5065479422B58AE200213313 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5065479322B58AE200213313 /* AppDelegate.swift */; };
-		5065479622B58AE200213313 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5065479522B58AE200213313 /* ViewController.swift */; };
+		5065479622B58AE200213313 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5065479522B58AE200213313 /* ScheduleViewController.swift */; };
 		5065479922B58AE200213313 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5065479722B58AE200213313 /* Main.storyboard */; };
 		5065479B22B58AE400213313 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5065479A22B58AE400213313 /* Assets.xcassets */; };
 		5065479E22B58AE400213313 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5065479C22B58AE400213313 /* LaunchScreen.storyboard */; };
 		506547A922B58AE400213313 /* AminiAirlinesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506547A822B58AE400213313 /* AminiAirlinesTests.swift */; };
 		506547B422B58AE400213313 /* AminiAirlinesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506547B322B58AE400213313 /* AminiAirlinesUITests.swift */; };
+		50E318AB22B82A7700CB9624 /* ClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E318AA22B82A7700CB9624 /* ClientService.swift */; };
+		50E318AE22B82AB900CB9624 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E318AD22B82AB900CB9624 /* Auth.swift */; };
+		50E318B222B82B2100CB9624 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E318B122B82B2100CB9624 /* Constants.swift */; };
+		50E318B422B82FC000CB9624 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E318B322B82FC000CB9624 /* WelcomeViewController.swift */; };
+		50E318B722B8DE0D00CB9624 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E318B622B8DE0D00CB9624 /* MapsViewController.swift */; };
+		50E318B922B8E73E00CB9624 /* Airports.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50E318B822B8E73E00CB9624 /* Airports.plist */; };
+		50E318BB22B8ED2700CB9624 /* Airports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E318BA22B8ED2700CB9624 /* Airports.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +43,7 @@
 /* Begin PBXFileReference section */
 		5065479022B58AE200213313 /* AminiAirlines.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AminiAirlines.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5065479322B58AE200213313 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5065479522B58AE200213313 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5065479522B58AE200213313 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		5065479822B58AE200213313 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5065479A22B58AE400213313 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5065479D22B58AE400213313 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +54,13 @@
 		506547AF22B58AE400213313 /* AminiAirlinesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AminiAirlinesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		506547B322B58AE400213313 /* AminiAirlinesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AminiAirlinesUITests.swift; sourceTree = "<group>"; };
 		506547B522B58AE400213313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50E318AA22B82A7700CB9624 /* ClientService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientService.swift; sourceTree = "<group>"; };
+		50E318AD22B82AB900CB9624 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		50E318B122B82B2100CB9624 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		50E318B322B82FC000CB9624 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		50E318B622B8DE0D00CB9624 /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
+		50E318B822B8E73E00CB9624 /* Airports.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Airports.plist; sourceTree = "<group>"; };
+		50E318BA22B8ED2700CB9624 /* Airports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airports.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				5065479222B58AE200213313 /* AminiAirlines */,
+				5065479322B58AE200213313 /* AppDelegate.swift */,
+				5065479722B58AE200213313 /* Main.storyboard */,
 				506547A722B58AE400213313 /* AminiAirlinesTests */,
 				506547B222B58AE400213313 /* AminiAirlinesUITests */,
 				5065479122B58AE200213313 /* Products */,
@@ -97,12 +113,12 @@
 		5065479222B58AE200213313 /* AminiAirlines */ = {
 			isa = PBXGroup;
 			children = (
-				5065479322B58AE200213313 /* AppDelegate.swift */,
-				5065479522B58AE200213313 /* ViewController.swift */,
-				5065479722B58AE200213313 /* Main.storyboard */,
-				5065479A22B58AE400213313 /* Assets.xcassets */,
-				5065479C22B58AE400213313 /* LaunchScreen.storyboard */,
 				5065479F22B58AE400213313 /* Info.plist */,
+				50E318B022B82B0200CB9624 /* Common */,
+				50E318AC22B82A9800CB9624 /* Models */,
+				506547C122B58B3700213313 /* Networking */,
+				50E318AF22B82ADD00CB9624 /* Resources */,
+				50E318B522B82FC700CB9624 /* Views */,
 			);
 			path = AminiAirlines;
 			sourceTree = "<group>";
@@ -123,6 +139,51 @@
 				506547B522B58AE400213313 /* Info.plist */,
 			);
 			path = AminiAirlinesUITests;
+			sourceTree = "<group>";
+		};
+		506547C122B58B3700213313 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				50E318AA22B82A7700CB9624 /* ClientService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		50E318AC22B82A9800CB9624 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				50E318AD22B82AB900CB9624 /* Auth.swift */,
+				50E318BA22B8ED2700CB9624 /* Airports.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		50E318AF22B82ADD00CB9624 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5065479A22B58AE400213313 /* Assets.xcassets */,
+				5065479C22B58AE400213313 /* LaunchScreen.storyboard */,
+				50E318B822B8E73E00CB9624 /* Airports.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		50E318B022B82B0200CB9624 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				50E318B122B82B2100CB9624 /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		50E318B522B82FC700CB9624 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5065479522B58AE200213313 /* ScheduleViewController.swift */,
+				50E318B322B82FC000CB9624 /* WelcomeViewController.swift */,
+				50E318B622B8DE0D00CB9624 /* MapsViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50E318B922B8E73E00CB9624 /* Airports.plist in Resources */,
 				5065479E22B58AE400213313 /* LaunchScreen.storyboard in Resources */,
 				5065479B22B58AE400213313 /* Assets.xcassets in Resources */,
 				5065479922B58AE200213313 /* Main.storyboard in Resources */,
@@ -256,8 +318,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5065479622B58AE200213313 /* ViewController.swift in Sources */,
+				50E318B222B82B2100CB9624 /* Constants.swift in Sources */,
+				5065479622B58AE200213313 /* ScheduleViewController.swift in Sources */,
+				50E318B722B8DE0D00CB9624 /* MapsViewController.swift in Sources */,
 				5065479422B58AE200213313 /* AppDelegate.swift in Sources */,
+				50E318B422B82FC000CB9624 /* WelcomeViewController.swift in Sources */,
+				50E318BB22B8ED2700CB9624 /* Airports.swift in Sources */,
+				50E318AB22B82A7700CB9624 /* ClientService.swift in Sources */,
+				50E318AE22B82AB900CB9624 /* Auth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

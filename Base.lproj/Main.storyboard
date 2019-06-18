@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Anz-xS-B8a">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="ssV-6f-CHg">
+            <objects>
+                <viewController id="Anz-xS-B8a" customClass="WelcomeViewController" customModule="AminiAirlines" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pVD-jz-0A2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="airplaneSunset" translatesAutoresizingMaskIntoConstraints="NO" id="eu7-kg-kOs">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jv8-L9-U0N">
+                                <rect key="frame" x="67.5" y="320" width="240" height="240"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="6fb-9b-rKK"/>
+                                    <constraint firstAttribute="width" constant="240" id="QQo-kF-om9"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where will Tomorrow take you?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVx-dh-ajv">
+                                <rect key="frame" x="67.5" y="320" width="240" height="240"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amini Airlines" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6P-Zy-6gT">
+                                <rect key="frame" x="16" y="80" width="343" height="41"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="31"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZ2-9v-4GB">
+                                <rect key="frame" x="16" y="577" width="343" height="54"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="32"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="Anz-xS-B8a" eventType="touchUpInside" id="6T3-7U-Dky"/>
+                                    <action selector="searchFlight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="123-Ad-H0x"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="IcL-0n-9w5">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="D6P-Zy-6gT" firstAttribute="leading" secondItem="Gw8-xG-QyQ" secondAttribute="leading" constant="16" id="5pv-GQ-eVc"/>
+                            <constraint firstItem="Gw8-xG-QyQ" firstAttribute="bottom" secondItem="FZ2-9v-4GB" secondAttribute="bottom" constant="36" id="9Qs-WF-yx6"/>
+                            <constraint firstItem="D6P-Zy-6gT" firstAttribute="top" secondItem="pVD-jz-0A2" secondAttribute="top" constant="80" id="Hns-fe-g8l"/>
+                            <constraint firstItem="TVx-dh-ajv" firstAttribute="centerY" secondItem="Jv8-L9-U0N" secondAttribute="centerY" id="Hy6-ly-GQD"/>
+                            <constraint firstItem="IcL-0n-9w5" firstAttribute="centerY" secondItem="pVD-jz-0A2" secondAttribute="centerY" id="LyE-sL-ihW"/>
+                            <constraint firstItem="Jv8-L9-U0N" firstAttribute="centerX" secondItem="pVD-jz-0A2" secondAttribute="centerX" id="MtQ-8v-lFe"/>
+                            <constraint firstItem="TVx-dh-ajv" firstAttribute="centerX" secondItem="Jv8-L9-U0N" secondAttribute="centerX" id="Pqi-1Z-tg9"/>
+                            <constraint firstItem="eu7-kg-kOs" firstAttribute="trailing" secondItem="pVD-jz-0A2" secondAttribute="trailing" id="RhC-ab-A88"/>
+                            <constraint firstItem="eu7-kg-kOs" firstAttribute="top" secondItem="pVD-jz-0A2" secondAttribute="top" id="SMP-fs-NBf"/>
+                            <constraint firstItem="Gw8-xG-QyQ" firstAttribute="trailing" secondItem="FZ2-9v-4GB" secondAttribute="trailing" constant="16" id="XUK-qg-eaI"/>
+                            <constraint firstItem="IcL-0n-9w5" firstAttribute="centerX" secondItem="pVD-jz-0A2" secondAttribute="centerX" id="dw4-aG-Rsc"/>
+                            <constraint firstItem="eu7-kg-kOs" firstAttribute="leading" secondItem="pVD-jz-0A2" secondAttribute="leading" id="eWb-FI-gMB"/>
+                            <constraint firstItem="eu7-kg-kOs" firstAttribute="bottom" secondItem="pVD-jz-0A2" secondAttribute="bottom" id="g1B-fG-JCp"/>
+                            <constraint firstItem="TVx-dh-ajv" firstAttribute="top" secondItem="Jv8-L9-U0N" secondAttribute="top" id="l3b-oM-2LP"/>
+                            <constraint firstItem="Jv8-L9-U0N" firstAttribute="top" secondItem="pVD-jz-0A2" secondAttribute="top" constant="320" id="n33-F3-rtg"/>
+                            <constraint firstItem="FZ2-9v-4GB" firstAttribute="leading" secondItem="Gw8-xG-QyQ" secondAttribute="leading" constant="16" id="p8q-FF-qba"/>
+                            <constraint firstItem="Gw8-xG-QyQ" firstAttribute="trailing" secondItem="D6P-Zy-6gT" secondAttribute="trailing" constant="16" id="pG5-y1-NPI"/>
+                            <constraint firstItem="TVx-dh-ajv" firstAttribute="leading" secondItem="Jv8-L9-U0N" secondAttribute="leading" id="tfZ-nw-Zfy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gw8-xG-QyQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginActivityIndicator" destination="IcL-0n-9w5" id="Jmh-Af-flb"/>
+                        <outlet property="loginBottomConstraint" destination="9Qs-WF-yx6" id="zWh-gZ-u3u"/>
+                        <outlet property="loginButton" destination="FZ2-9v-4GB" id="WVe-v2-kq3"/>
+                        <outlet property="welcomeImageView" destination="eu7-kg-kOs" id="ZMq-3b-h00"/>
+                        <outlet property="welcomeMessageView" destination="Jv8-L9-U0N" id="xd9-uB-YzW"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="loginSegue" id="J0q-zg-UJq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dSs-ij-PLR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1103.2" y="77.811094452773617"/>
+        </scene>
+        <!--Schedule View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ScheduleViewController" customModule="AminiAirlines" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plane-window" translatesAutoresizingMaskIntoConstraints="NO" id="5vo-0G-XPy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sQA-fJ-PLW">
+                                <rect key="frame" x="16" y="253" width="343" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="uho-DR-znx"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Departure From" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQW-Ul-hNM">
+                                <rect key="frame" x="49" y="208" width="159" height="28"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Airline Schedules" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5F-4e-6ZR">
+                                <rect key="frame" x="16" y="120" width="266" height="38"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="29"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="takeoff" translatesAutoresizingMaskIntoConstraints="NO" id="hfA-gF-JYe">
+                                <rect key="frame" x="16" y="208" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="85T-4N-elz"/>
+                                    <constraint firstAttribute="width" constant="30" id="VRa-Tm-x7P"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VOJ-tv-B4l">
+                                <rect key="frame" x="16" y="383.5" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0WY-Bm-iMs"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Travel Destination" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4C-pB-CMs">
+                                <rect key="frame" x="49" y="340.5" width="176" height="28"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landing" translatesAutoresizingMaskIntoConstraints="NO" id="4la-gW-Z46">
+                                <rect key="frame" x="16" y="338" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="aXZ-Wh-z4n"/>
+                                    <constraint firstAttribute="height" constant="30" id="qPc-Rl-TBR"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qkb-Jv-xVz">
+                                <rect key="frame" x="16" y="589" width="343" height="42"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="23"/>
+                                <state key="normal" title="Search Flight">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="searchFlight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="015-Rr-dx0"/>
+                                    <segue destination="3z8-wZ-31o" kind="show" id="YQI-eO-IQy"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="date" translatesAutoresizingMaskIntoConstraints="NO" id="jah-MP-3XS">
+                                <rect key="frame" x="16" y="468.5" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="av9-bP-EXT"/>
+                                    <constraint firstAttribute="height" constant="30" id="wMf-76-wR7"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Schedule Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLj-tG-wrH">
+                                <rect key="frame" x="49" y="469.5" width="139" height="27.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Schedule date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XUb-co-ihz">
+                                <rect key="frame" x="16" y="513.5" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4wP-Tc-FVS"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sQA-fJ-PLW" firstAttribute="top" secondItem="hfA-gF-JYe" secondAttribute="bottom" constant="15" id="0sc-Gh-syK"/>
+                            <constraint firstItem="jah-MP-3XS" firstAttribute="top" secondItem="VOJ-tv-B4l" secondAttribute="bottom" constant="45" id="3UK-dP-751"/>
+                            <constraint firstItem="4la-gW-Z46" firstAttribute="top" secondItem="sQA-fJ-PLW" secondAttribute="bottom" constant="45" id="4Ja-HG-YUR"/>
+                            <constraint firstItem="5vo-0G-XPy" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="5fO-ZC-JbF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wQW-Ul-hNM" secondAttribute="trailing" constant="167" id="6jn-HG-6dC"/>
+                            <constraint firstItem="GLj-tG-wrH" firstAttribute="leading" secondItem="jah-MP-3XS" secondAttribute="trailing" constant="3" id="9PZ-86-bvt"/>
+                            <constraint firstItem="A5F-4e-6ZR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="A7Y-MK-KUr"/>
+                            <constraint firstItem="GLj-tG-wrH" firstAttribute="top" secondItem="VOJ-tv-B4l" secondAttribute="bottom" constant="46" id="Fr7-R0-hFR"/>
+                            <constraint firstItem="5vo-0G-XPy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="IjZ-MA-0hp"/>
+                            <constraint firstItem="k4C-pB-CMs" firstAttribute="top" secondItem="sQA-fJ-PLW" secondAttribute="bottom" constant="47.5" id="JzM-Rh-L3o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qkb-Jv-xVz" secondAttribute="trailing" constant="16" id="K4T-nK-0eR"/>
+                            <constraint firstItem="sQA-fJ-PLW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Qt3-J9-VcH"/>
+                            <constraint firstItem="XUb-co-ihz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Rxg-eR-ss1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GLj-tG-wrH" secondAttribute="trailing" constant="187" id="ScZ-Og-b3D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A5F-4e-6ZR" secondAttribute="trailing" constant="93" id="TUN-vu-xMD"/>
+                            <constraint firstItem="jah-MP-3XS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="UJP-lY-CQ7"/>
+                            <constraint firstAttribute="bottom" secondItem="qkb-Jv-xVz" secondAttribute="bottom" constant="36" id="X29-4R-LEm"/>
+                            <constraint firstItem="hfA-gF-JYe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bQv-XM-KoD"/>
+                            <constraint firstItem="k4C-pB-CMs" firstAttribute="leading" secondItem="4la-gW-Z46" secondAttribute="trailing" constant="3" id="c32-ky-jlj"/>
+                            <constraint firstItem="hfA-gF-JYe" firstAttribute="top" secondItem="A5F-4e-6ZR" secondAttribute="bottom" constant="50" id="c4J-AG-eNy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VOJ-tv-B4l" secondAttribute="trailing" constant="16" id="cpC-sj-bIy"/>
+                            <constraint firstItem="5vo-0G-XPy" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="f4g-jb-U1g"/>
+                            <constraint firstItem="VOJ-tv-B4l" firstAttribute="top" secondItem="k4C-pB-CMs" secondAttribute="bottom" constant="15" id="giA-2S-cps"/>
+                            <constraint firstItem="wQW-Ul-hNM" firstAttribute="top" secondItem="A5F-4e-6ZR" secondAttribute="bottom" constant="50" id="lH7-7m-OVz"/>
+                            <constraint firstItem="A5F-4e-6ZR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="120" id="oiB-9e-qmf"/>
+                            <constraint firstItem="5vo-0G-XPy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pMo-gR-KY5"/>
+                            <constraint firstItem="VOJ-tv-B4l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qVp-KQ-bZf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XUb-co-ihz" secondAttribute="trailing" constant="16" id="qav-92-D8C"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k4C-pB-CMs" secondAttribute="trailing" constant="150" id="qom-CU-41q"/>
+                            <constraint firstItem="4la-gW-Z46" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="rBQ-FK-1lr"/>
+                            <constraint firstItem="wQW-Ul-hNM" firstAttribute="leading" secondItem="hfA-gF-JYe" secondAttribute="trailing" constant="3" id="s3D-2N-VpV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sQA-fJ-PLW" secondAttribute="trailing" constant="16" id="sGh-B2-kkE"/>
+                            <constraint firstItem="qkb-Jv-xVz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="wEZ-Xw-KS6"/>
+                            <constraint firstItem="XUb-co-ihz" firstAttribute="top" secondItem="jah-MP-3XS" secondAttribute="bottom" constant="15" id="xQ3-fr-Cis"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="departureTextField" destination="sQA-fJ-PLW" id="bpg-z0-rrD"/>
+                        <outlet property="destinationTextField" destination="VOJ-tv-B4l" id="aF9-X2-LdP"/>
+                        <outlet property="scheduleDateTextField" destination="XUb-co-ihz" id="Get-FX-2d8"/>
+                        <outlet property="searchFlightBottomConstraint" destination="X29-4R-LEm" id="v0a-Bu-5Cc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-353" y="78"/>
+        </scene>
+        <!--Maps View Controller-->
+        <scene sceneID="FlZ-lc-RhM">
+            <objects>
+                <viewController id="3z8-wZ-31o" customClass="MapsViewController" customModule="AminiAirlines" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MFY-qE-hpb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="DaI-u1-JJA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <outlet property="delegate" destination="3z8-wZ-31o" id="DID-Nm-sMF"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DaI-u1-JJA" firstAttribute="top" secondItem="MFY-qE-hpb" secondAttribute="top" id="HbX-FD-X6Q"/>
+                            <constraint firstItem="DaI-u1-JJA" firstAttribute="trailing" secondItem="MFY-qE-hpb" secondAttribute="trailing" id="Icq-x5-bxP"/>
+                            <constraint firstItem="DaI-u1-JJA" firstAttribute="leading" secondItem="MFY-qE-hpb" secondAttribute="leading" id="OBZ-KZ-3mh"/>
+                            <constraint firstItem="DaI-u1-JJA" firstAttribute="bottom" secondItem="MFY-qE-hpb" secondAttribute="bottom" id="wOL-hm-pCe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nil-fS-pmj"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapsView" destination="DaI-u1-JJA" id="j8A-dT-hAu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XjB-Pl-Ysy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="354" y="78"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="airplaneSunset" width="2560" height="1440"/>
+        <image name="date" width="388" height="401"/>
+        <image name="landing" width="401" height="339"/>
+        <image name="plane-window" width="2188" height="2918"/>
+        <image name="takeoff" width="399" height="237"/>
+    </resources>
+</document>
