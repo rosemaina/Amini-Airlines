@@ -188,6 +188,14 @@
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="c0Q-tR-SmX">
+                                <rect key="frame" x="162.5" y="308.5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="1xU-TX-z70"/>
+                                    <constraint firstAttribute="height" constant="50" id="i2m-Ch-zH1"/>
+                                </constraints>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -206,7 +214,9 @@
                             <constraint firstItem="XUb-co-ihz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Rxg-eR-ss1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GLj-tG-wrH" secondAttribute="trailing" constant="187" id="ScZ-Og-b3D"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A5F-4e-6ZR" secondAttribute="trailing" constant="93" id="TUN-vu-xMD"/>
+                            <constraint firstItem="c0Q-tR-SmX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="U15-o7-x4F"/>
                             <constraint firstItem="jah-MP-3XS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="UJP-lY-CQ7"/>
+                            <constraint firstItem="c0Q-tR-SmX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UcT-wX-NS1"/>
                             <constraint firstAttribute="bottom" secondItem="qkb-Jv-xVz" secondAttribute="bottom" constant="36" id="X29-4R-LEm"/>
                             <constraint firstItem="hfA-gF-JYe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bQv-XM-KoD"/>
                             <constraint firstItem="k4C-pB-CMs" firstAttribute="leading" secondItem="4la-gW-Z46" secondAttribute="trailing" constant="3" id="c32-ky-jlj"/>
@@ -229,6 +239,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="c0Q-tR-SmX" id="rss-0U-PgH"/>
                         <outlet property="departureTextField" destination="sQA-fJ-PLW" id="bpg-z0-rrD"/>
                         <outlet property="destinationTextField" destination="VOJ-tv-B4l" id="aF9-X2-LdP"/>
                         <outlet property="scheduleDateTextField" destination="XUb-co-ihz" id="Get-FX-2d8"/>

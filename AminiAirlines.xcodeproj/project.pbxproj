@@ -19,8 +19,8 @@
 		50E318B222B82B2100CB9624 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E318B122B82B2100CB9624 /* Constants.swift */; };
 		50E318B422B82FC000CB9624 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E318B322B82FC000CB9624 /* WelcomeViewController.swift */; };
 		50E318B722B8DE0D00CB9624 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E318B622B8DE0D00CB9624 /* MapsViewController.swift */; };
-		50E318B922B8E73E00CB9624 /* Airports.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50E318B822B8E73E00CB9624 /* Airports.plist */; };
-		50E318BB22B8ED2700CB9624 /* Airports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E318BA22B8ED2700CB9624 /* Airports.swift */; };
+		50E318BD22BA304900CB9624 /* AirportResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E318BC22BA304900CB9624 /* AirportResponse.swift */; };
+		50E318C122BA36D700CB9624 /* Airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 50E318C022BA36D700CB9624 /* Airports.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +59,8 @@
 		50E318B122B82B2100CB9624 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		50E318B322B82FC000CB9624 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		50E318B622B8DE0D00CB9624 /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
-		50E318B822B8E73E00CB9624 /* Airports.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Airports.plist; sourceTree = "<group>"; };
-		50E318BA22B8ED2700CB9624 /* Airports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airports.swift; sourceTree = "<group>"; };
+		50E318BC22BA304900CB9624 /* AirportResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportResponse.swift; sourceTree = "<group>"; };
+		50E318C022BA36D700CB9624 /* Airports.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Airports.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,7 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				50E318AD22B82AB900CB9624 /* Auth.swift */,
-				50E318BA22B8ED2700CB9624 /* Airports.swift */,
+				50E318BC22BA304900CB9624 /* AirportResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -163,7 +163,6 @@
 			children = (
 				5065479A22B58AE400213313 /* Assets.xcassets */,
 				5065479C22B58AE400213313 /* LaunchScreen.storyboard */,
-				50E318B822B8E73E00CB9624 /* Airports.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -172,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				50E318B122B82B2100CB9624 /* Constants.swift */,
+				50E318C022BA36D700CB9624 /* Airports.json */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -290,8 +290,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50E318B922B8E73E00CB9624 /* Airports.plist in Resources */,
 				5065479E22B58AE400213313 /* LaunchScreen.storyboard in Resources */,
+				50E318C122BA36D700CB9624 /* Airports.json in Resources */,
 				5065479B22B58AE400213313 /* Assets.xcassets in Resources */,
 				5065479922B58AE200213313 /* Main.storyboard in Resources */,
 			);
@@ -323,9 +323,9 @@
 				50E318B722B8DE0D00CB9624 /* MapsViewController.swift in Sources */,
 				5065479422B58AE200213313 /* AppDelegate.swift in Sources */,
 				50E318B422B82FC000CB9624 /* WelcomeViewController.swift in Sources */,
-				50E318BB22B8ED2700CB9624 /* Airports.swift in Sources */,
 				50E318AB22B82A7700CB9624 /* ClientService.swift in Sources */,
 				50E318AE22B82AB900CB9624 /* Auth.swift in Sources */,
+				50E318BD22BA304900CB9624 /* AirportResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
