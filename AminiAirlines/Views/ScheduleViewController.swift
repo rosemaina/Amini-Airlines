@@ -48,8 +48,8 @@ class ScheduleViewController: UIViewController {
 
 extension ScheduleViewController {
     @IBAction func searchFlight(_ sender: UIButton) {
-//        activityIndicator.isHidden = false
-//        activityIndicator.startAnimating()
+                activityIndicator.isHidden = false
+                activityIndicator.startAnimating()
         
         let header = [
             "Authorization": "Bearer \(String(describing: defaults.string(forKey: "token")))",
@@ -57,21 +57,41 @@ extension ScheduleViewController {
             "Content-Type": "application/json"
         ]
         
-        let departureText = departureTextField.text?.split(separator: "_")[1]
-        let destinationText = destinationTextField.text?.split(separator: "-")[1]
-        let url = "/operations/schedules/\(String(describing: departureText))/\(String(describing: destinationText))/\(String(describing: scheduleDateTextField.text))"
+        guard
+            // Unwrap all the needed values
+            let departureText = departureTextField.text,
+            let destinationText = destinationTextField.text,
+            let scheduleDateText = scheduleDateTextField.text else {
+                self.showAlert(with: "Please fill in all the fields!")
+                self.activityIndicator.stopAnimating()
+                self.activityIndicator.hidesWhenStopped = true
+                return
+        }
         
+        // Format all the needed values
+        let destination: String = String(describing: destinationText.split(separator: "-")[1].filter { !" ".contains($0) })
+        let depature: String = String(describing: departureText.split(separator: "-")[1].filter { !" ".contains($0) })
+        
+        // Create the url
+        let url = "/operations/schedules/\(depature)/\(destination)/\(scheduleDateText)"
+        
+        // Make the network call
         ClientService.standard.get(url: url,
                                    headers: header) { (status, data) -> (Void) in
-                                    print("This is the data: \(String(describing: data))")
                                     do {
                                         let formattedData = try JSONSerialization.jsonObject(with: data!, options: [])
                                         print("formattedData: \(formattedData)")
+                                        
+                                        self.performSegue(withIdentifier: "scheduleToMap", sender: nil)
+                                        self.activityIndicator.stopAnimating()
+                                        self.activityIndicator.hidesWhenStopped = true
                                     } catch let error {
                                         print("Error passing JSON: \(error)")
+                                        self.showAlert(with: "Oh no! Something went wrong. Search for a different schedule.")
+                                        self.activityIndicator.stopAnimating()
+                                        self.activityIndicator.hidesWhenStopped = true
                                     }
-        }
-    }
+        }    }
     
     @objc func cancelPicker(){
         self.view.endEditing(true)
@@ -146,9 +166,3 @@ extension ScheduleViewController: UIPickerViewDelegate, UIPickerViewDataSource {
             }
         }
 }
-
-//client_id 76tmu6fu3gejspxk3942dt55
-//client_secret W9YNySqjKs
-//grant_type client_credentials
-//access_token 7et8uuu2xu4cntag7hwey3ep
-//token_type  bearer

@@ -163,7 +163,6 @@
                                 </state>
                                 <connections>
                                     <action selector="searchFlight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="015-Rr-dx0"/>
-                                    <segue destination="3z8-wZ-31o" kind="show" id="YQI-eO-IQy"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="date" translatesAutoresizingMaskIntoConstraints="NO" id="jah-MP-3XS">
@@ -244,6 +243,7 @@
                         <outlet property="destinationTextField" destination="VOJ-tv-B4l" id="aF9-X2-LdP"/>
                         <outlet property="scheduleDateTextField" destination="XUb-co-ihz" id="Get-FX-2d8"/>
                         <outlet property="searchFlightBottomConstraint" destination="X29-4R-LEm" id="v0a-Bu-5Cc"/>
+                        <segue destination="3z8-wZ-31o" kind="show" identifier="scheduleToMap" id="jer-uF-egQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
